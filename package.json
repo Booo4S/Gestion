@@ -1,0 +1,25 @@
+{
+  "name": "gestion-des-clients",
+  "version": "1.0.0",
+  "description": "Une application pour la gestion des clients, prestations et expertises",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gestion",
+    "clients",
+    "prestations",
+    "expertises"
+  ],
+  "author": "Your Name",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^9.0.0",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "electron-reload": "^1.5.0"
+  }
+}

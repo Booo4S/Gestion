@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des Clients</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#" id="home">Accueil</a></li>
+                    <li><a href="#" id="client">Client</a></li>
+                    <li><a href="#" id="devis">Devis</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="home-section">
+                <h1>Liste des clients</h1>
+                <div id="clients-table"></div>
+                <button id="add-client">Ajouter</button>
+                <button id="edit-client">Modifier</button>
+                <button id="delete-client">Supprimer</button>
+                <div id="statistics"></div>
+            </section>
+            <section id="client-section">
+                <h1>Fiche client</h1>
+                <form id="client-form">
+                    <label for="client-name">Nom:</label>
+                    <input type="text" id="client-name">
+                    <label for="client-rate">Tarif:</label>
+                    <input type="number" id="client-rate">
+                    <button type="submit" id="save-client">Enregistrer</button>
+                </form>
+            </section>
+            <section id="devis-section">
+                <h1>Devis</h1>
+                <form id="devis-form">
+                    <label for="client-select">Client:</label>
+                    <select id="client-select"></select>
+                    <label for="consultations-number">Nombre de consultations:</label>
+                    <input type="number" id="consultations-number">
+                    <div id="calculated-amount"></div>
+                </form>
+            </section>
+        </main>
+    </div>
+    <script src="renderer.js"></script>
+</body>
+</html>
